@@ -1,2 +1,5 @@
-<h1>Sistema de cadastro de comidas</h1>
+<h1>Sistema de cadastro de receitas</h1>
+
+> Status do projeto: Em desenvolvimento
+
 
