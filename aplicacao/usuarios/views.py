@@ -32,6 +32,14 @@ def cadastro(request):
 
 
 def login(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        senha = request.POST['senha']
+        if email == "" or senha == "":
+            print("Você deve colocar sua senha e email")
+            return redirect('login')
+        print(email, senha)
+        return redirect('dashboard')
     return render(request, 'usuarios/login.html')
 
 
@@ -40,4 +48,4 @@ def logout(request):
 
 
 def dashboard(request):
-    pass
+    return render(request, 'usuarios/dashboard.html')
