@@ -103,6 +103,10 @@ def cria_receita(request):
         return render(request, 'usuarios/cria_receita.html')
 
 
+def edita_receita(request, receita_id):
+    pass
+
+
 def deleta_receita(request, receita_id):
     receita = get_object_or_404(Receita, pk=receita_id)
     receita.delete()
